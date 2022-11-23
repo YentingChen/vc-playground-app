@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "vc-app-playground",
-    "slug": "vc-app-playground",
+    "name": "vc-playground-app",
+    "slug": "vc-playground-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

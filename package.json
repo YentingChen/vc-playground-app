@@ -1,5 +1,5 @@
 {
-  "name": "vc-app-playground",
+  "name": "vc-playground-app",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start --dev-client",
