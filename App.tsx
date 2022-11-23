@@ -1,10 +1,20 @@
+import { useEffect } from "react";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import Braze from "react-native-appboy-sdk";
 
 export default function App() {
+  useEffect(() => {
+    Braze.changeUser("494efe606b75b1");
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>This is an internal app to test out various technologies and experiments</Text>
+      <Button
+        title="Press me"
+        onPress={() => Alert.alert('Simple Button pressed')}
+      />
       <StatusBar style="auto" />
     </View>
   );

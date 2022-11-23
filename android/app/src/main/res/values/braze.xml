@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string translatable="false" name="com_braze_api_key">7ab31baa-4f04-42ae-b751-f271eb9166ea</string>
+  <string translatable="false" name="com_braze_custom_endpoint">sdk.fra-01.braze.eu</string>
+  <integer name="com_braze_session_timeout">60</integer>
+  <bool name="com_braze_geofences_enabled">false</bool>
+  <bool name="com_braze_firebase_cloud_messaging_registration_enabled">true</bool>
+  <string translatable="false" name="com_braze_firebase_cloud_messaging_sender_id">860544725534</string>
+  <bool name="com_braze_sdk_authentication_enabled">false</bool>
+  <integer name="com_braze_logger_initial_log_level">0</integer>
+  <integer name="com_braze_trigger_action_minimum_time_interval_seconds">0</integer>
+  <bool name="com_braze_enable_location_collection">false</bool>
+  <bool name="com_braze_automatic_geofence_requests_enabled">false</bool>
+</resources>
