@@ -9,13 +9,11 @@
     "build:android": "eas build --profile development --platform android"
   },
   "dependencies": {
-    "@braze/expo-plugin": "^0.4.0",
-    "expo": "~47.0.8",
+    "expo": "~47.0.14",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-native": "0.70.5",
-    "react-native-appboy-sdk": "^1.40.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.70.8",
     "react-native-web": "~0.18.9",
     "expo-splash-screen": "~0.17.5",
     "expo-dev-client": "~2.0.1"

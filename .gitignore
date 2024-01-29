@@ -49,7 +49,6 @@ local.properties
 *.iml
 *.hprof
 .cxx/
-google-services.json
 
 # node.js
 #
@@ -73,5 +72,33 @@ buck-out/
 .expo/
 web-build/
 dist/
+# Expo: Managed workflow does not need native folders committed
+android/
+ios/
 
 # @end expo-cli
+
+# local env overrides
+.env*.local
+.env.tmp
+eas.json.tmp
+temp.json
+yarn-error.log
+jestCache/
+
+#storybook
+storybook-static
+
+#firebase
+/assets
+ios/VoucherCodes/GoogleService-Info.plist
+android/app/google-services.json
+
+#braze
+android/app/src/main/res/values/braze.xml
+
+#functionalTests
+!functionalTests/apps/iOS/*
+
+#JEST Unit test reports
+/coverage

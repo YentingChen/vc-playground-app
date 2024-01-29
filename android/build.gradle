@@ -2,8 +2,6 @@
 
 buildscript {
     ext {
-        // also required by Braze: node_modules/react-native-appboy-sdk/android/build.gradle
-        kotlinVersion = '1.7.10'
         buildToolsVersion = findProperty('android.buildToolsVersion') ?: '31.0.0'
         minSdkVersion = Integer.parseInt(findProperty('android.minSdkVersion') ?: '21')
         compileSdkVersion = Integer.parseInt(findProperty('android.compileSdkVersion') ?: '31')
@@ -26,13 +24,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-        classpath('com.android.tools.build:gradle:7.3.0')
+        classpath('com.android.tools.build:gradle:7.2.1')
         classpath('com.facebook.react:react-native-gradle-plugin')
         classpath('de.undercouch:gradle-download-task:5.0.1')
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-        classpath('com.google.gms:google-services:4.3.13')
     }
 }
 
@@ -67,30 +63,3 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
     }
 }
-
-// @generated begin react-native-braze-sdk-import - expo prebuild (DO NOT MODIFY) sync-e5a646bfa230e570311465d14296fef3d529b4b5
-allprojects { 
-  repositories { 
-    maven { url "https://appboy.github.io/appboy-android-sdk/sdk" } 
-  } 
-}
-buildscript {
-    ext {
-        // Set the kotlin version used in the Braze React SDK's buildscript
-        if (findProperty('android.kotlinVersion')) {
-            kotlin_version = findProperty('android.kotlinVersion')
-        } else {
-            kotlin_version = "1.6.0"
-        }
-    }
-  repositories {
-    google()
-    mavenCentral()
-  }
-  dependencies { 
-    classpath 'com.google.gms:google-services:4.3.4'
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
-  } 
-}
-
-// @generated end react-native-braze-sdk-import

@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "co.uk.vouchercodes.playground"
@@ -35,23 +33,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "@braze/expo-plugin",
-        {
-          "sessionTimeout": 60,
-          "enableGeofence": false,
-          "enableBrazeIosPush": true,
-          "enableFirebaseCloudMessaging": true,
-          "enableSdkAuthentication": false,
-          "logLevel": 0,
-          "minimumTriggerIntervalInSeconds": 0,
-          "enableAutomaticLocationCollection": false,
-          "enableAutomaticGeofenceRequests": false,
-          "dismissModalOnOutsideTap": true
-        }
-      ]
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
         "projectId": "390048b7-013a-4b93-b2cb-45503b0df5b2"
