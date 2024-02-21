@@ -33,7 +33,14 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "./plugin/app.plugin",
+        {
+          "mode": "development"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "390048b7-013a-4b93-b2cb-45503b0df5b2"
