@@ -9,7 +9,7 @@
     "build:android": "eas build --profile development --platform android"
   },
   "dependencies": {
-    "expo": "49",
+    "expo": "^49.0.6",
     "expo-dev-client": "~2.4.13",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",

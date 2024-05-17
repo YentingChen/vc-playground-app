@@ -17,6 +17,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
+      "deploymentTarget": "14.0",
       "bundleIdentifier": "co.uk.vouchercodes.playground"
     },
     "android": {
