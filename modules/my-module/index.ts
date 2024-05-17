@@ -17,8 +17,16 @@ export function setKeyValue(value: string): void {
   return MyModule.setKeyValue(value);
 }
 
-export function getKeyValue(): String {
+export function getKeyValue(): string {
   return MyModule.getKeyValue();
+}
+
+export function setGroupUserDefaultsValue(value: string): void {
+  return MyModule.setGroupUserDefaultsValue(value);
+}
+
+export function getGroupUserDefaultsValue(): string {
+  return MyModule.getGroupUserDefaultsValue();
 }
 
 export async function setValueAsync(value: string) {

@@ -34,7 +34,14 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "react-native-safari-extension",
+        {
+          "folderName": "MyExtension"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "390048b7-013a-4b93-b2cb-45503b0df5b2"
