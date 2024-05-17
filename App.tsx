@@ -5,13 +5,17 @@ import * as Settings from "./modules/my-module";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>
-        {Settings.hello()}
-        This is an internal app to test out various technologies and experiments
-      </Text>
       <Button
-        title="Press me"
-        onPress={() => Alert.alert("Simple Button pressed")}
+        title="Set value:  abc "
+        onPress={() => Settings.setKeyValue("abc")}
+      />
+      <Button
+        title="Set value:  ggg"
+        onPress={() => Settings.setKeyValue("ggg")}
+      />
+      <Button
+        title="Get Value"
+        onPress={() => Alert.alert(`value: ${Settings.getKeyValue()}`)}
       />
       <StatusBar style="auto" />
     </View>
