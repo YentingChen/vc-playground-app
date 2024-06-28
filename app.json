@@ -18,7 +18,8 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "co.uk.vouchercodes.playground"
+      "bundleIdentifier": "uk.co.vouchercodes.debug",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,10 +35,68 @@
     "web": {
       "favicon": "./src/assets/favicon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "@braze/expo-plugin",
+        {
+          "androidApiKey": "7ab31baa-4f04-42ae-b751-f271eb9166ea",
+          "iosApiKey": "98edd563-8606-4705-b19c-8156d66fcd2b",
+          "baseUrl": "sdk.fra-01.braze.eu",
+          "enableFirebaseCloudMessaging": true,
+          "firebaseCloudMessagingSenderId": "860544725534",
+          "androidHandlePushDeepLinksAutomatically": true,
+          "iosRequestPushPermissionsAutomatically": true,
+          "enableBrazeIosPush": true,
+          "enableBrazeIosPushStories": true,
+          "enableBrazeIosRichPush": true,
+          "iosPushStoryAppGroup": "group.uk.co.vouchercodes.debug"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0",
+            "newArchEnabled": true
+          },
+          "ios": {
+            "deploymentTarget": "14.0",
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ],
     "extra": {
       "eas": {
-        "projectId": "390048b7-013a-4b93-b2cb-45503b0df5b2"
+        "projectId": "390048b7-013a-4b93-b2cb-45503b0df5b2",
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "BrazeExpoRichPush",
+                  "bundleIdentifier": "uk.co.vouchercodes.debug.BrazeExpoRichPush",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.uk.co.vouchercodes.debug"
+                    ]
+                  }
+                },
+                {
+                  "targetName": "BrazeExpoPushStories",
+                  "bundleIdentifier": "uk.co.vouchercodes.debug.BrazeExpoPushStories",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.uk.co.vouchercodes.debug"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
       }
     }
   }
